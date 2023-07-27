@@ -10,7 +10,7 @@
 -------
 
 
-This repo is the final outcome of my post [here](https://blog.devgenius.io/spring-customizing-the-weird-usernamepasswordauthenticationfilter-3222c3f0d09e?sk=9b14342b5ed0c3d6f59a5b5e60a7c766), and/or [here](https://www.devxperiences.com/pzwp1/2023/02/18/spring-customizing-the-weird-usernamepasswordauthenticationfilter/).
+This repo is the final outcome of my post [here](https://medium.com/@zzpzaf.se/spring-avoid-circular-dependency-error-of-your-component-s-66451d46b71a?sk=2e62d1773603fb4c74338b3a8cfa8924) or [here](https://www.devxperiences.com/pzwp1/2023/07/27/spring-avoid-circular-dependency-error-of-your-components/).
 
 The post actually is a thorough step-by-step guide on how you can reproduce a circular dependency error in Spring, and then shows a couple of workarounds to solve the issue. It acually uses a custom inplementation of the “weird” [UsernamePasswordAuthenticationFilter](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.html), which, for its own instantiation, requires an instance of an [AuthenticationManager](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/authentication/AuthenticationManager.html) object.
 
